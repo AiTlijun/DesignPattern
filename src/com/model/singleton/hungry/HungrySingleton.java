@@ -17,13 +17,13 @@ public class HungrySingleton {
     public static HungrySingleton getSingleton() {
         return singleton;
     }
-/**
- * @Author lijun
- * @Description //TODO 11:03
- * @Date 11:03 2018/10/18
- * @Param 
- * @return 
- **/
+    /**
+     * @Author lijun
+     * @Description //TODO 16:09
+     * @Date 16:09 2018/10/18
+     * @Param 
+     * @return n
+     **/
     public static String  getSingleton2(String param1,String param2) {
         return param1+param2;
     }
