@@ -1,6 +1,8 @@
 package com.model.observer;
 
-import java.util.Vector;
+import java.util.Observable;
+import java.util.Observer;
+import java.util.or;
 
 /**
  * @author hongwei
@@ -8,20 +10,19 @@ import java.util.Vector;
  */
 public abstract class Subject {
 
-    private Vector<Observer> vectorObservers = new Vector<Observer>();
+    Observable observable = new Observable();
 
     public void addObserver(Observer observer){
-        vectorObservers.add(observer);
+        observable.addObserver(observer);
     };
 
     public void removeObserver(Observer observer){
-        vectorObservers.remove(observer);
+        observable.deleteObserver(observer);
     };
 
     public void nodifyObservers(String status){
-        for (Observer observer: vectorObservers) {
-            System.out.println("通知所有观察者改变主题状态---");
-            observer.update(status);
-        }
+            if(observable.hasChanged()){
+                System.out.println("通知所有观察者改变主题状态---");
+            }
     };
 }

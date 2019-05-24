@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="nettty:war">
+    <output-path>$PROJECT_DIR$/nettty/target</output-path>
+    <root id="archive" name="netty-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="nettty:war exploded" />
+    </root>
+  </artifact>
+</component>
